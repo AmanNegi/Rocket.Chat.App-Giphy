@@ -1,14 +1,12 @@
 import {
   IConfigurationExtend,
   IEnvironmentRead,
-  ILogger,
-} from "@rocket.chat/apps-engine/definition/accessors";
-import { App } from "@rocket.chat/apps-engine/definition/App";
-import { IAppInfo } from "@rocket.chat/apps-engine/definition/metadata";
-import { SettingType } from "@rocket.chat/apps-engine/definition/settings";
+} from '@rocket.chat/apps-engine/definition/accessors';
+import { App } from '@rocket.chat/apps-engine/definition/App';
+import { SettingType } from '@rocket.chat/apps-engine/definition/settings';
 
-import { GiphyCommand } from "./commands/GiphyCommand";
-import { GifGetter } from "./helpers/GifGetter";
+import { GiphyCommand } from './commands/GiphyCommand';
+import { GifGetter } from './helpers/GifGetter';
 
 export class Giphy extends App {
   private gifGetter: GifGetter;
